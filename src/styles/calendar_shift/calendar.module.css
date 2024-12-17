@@ -1,0 +1,136 @@
+/* Calendar.css */
+@media (max-width: 768px) {
+  .rbc-toolbar {
+    flex-direction: column;
+  }
+
+  .rbc-event {
+    z-index: 1;
+  }
+
+  .rbc-btn-group {
+    flex-direction: column;
+  }
+
+  .selectedDate {
+    background-color: #bde5f3;
+  }
+
+  .today {
+    background-color: white !important;
+    border: 1px solid black !important;
+  }
+
+  .rbc-btn-group {
+    display: none;
+  }
+
+  .jobDay::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #ff4500;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.rbc-event {
+  z-index: 1;
+}
+
+.selectedDate {
+  background-color: #bde5f3;
+}
+
+.today {
+  background-color: white !important;
+  border: 1px solid black !important;
+}
+
+.rbc-btn-group {
+  display: none;
+}
+
+.jobDay::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #ff4500;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.add-shift-button {
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 0.8rem 10rem;
+  font-size: 1.6rem;
+  color: var(--primary);
+  border: 2px dashed var(--primary);
+  border-radius: 10px;
+  cursor: pointer;
+  gap: 1rem;
+}
+
+.add-shift-button span {
+  display: flex;
+  align-items: center;
+}
+
+.add-shift-button:hover {
+  background-color: #f8f9fa;
+}
+
+.shift-job {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.shift-time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 10px;
+  font-size: 12px;
+  color: #999;
+}
+
+.shift-time span:first-child {
+  color: #000;
+}
+
+.shift-title {
+  font-size: 15px;
+  color: #000;
+  flex-grow: 1;
+}
+
+.shift-bar {
+  width: auto;
+  height: 100%;
+  background-color: #000;
+  /* Default color */
+  margin-right: 5px;
+}
+
+.shift-time span {
+  margin-top: 4px;
+}

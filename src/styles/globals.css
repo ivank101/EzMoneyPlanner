@@ -1,0 +1,39 @@
+:root {
+  --primary: #256bdb;
+  --text: #1a1a1a;
+  --white: #fefefe;
+  --gray: #f2f2f7;
+  --border: #e4e4e4;
+  --red: #ff3126;
+  --orange: #f58b00;
+  --yellow: #f5c200;
+  --green: #1dc337;
+  --indigo: #5452cc;
+  --blue: #0070f5;
+  --cyan: #41afdc;
+  --purple: #9e4dc8;
+  --pink: #e59ba7;
+  --brown: #987a54;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}

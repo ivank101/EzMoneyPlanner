@@ -1,0 +1,68 @@
+/* Information.module.css */
+.container {
+  max-width: auto;
+  margin: 0 auto;
+}
+
+.main {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.partTimeButton {
+  background-color: #0070f3;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: block;
+}
+
+.partTimeButton:hover {
+  background-color: #005bb5;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.formGroup input {
+  width: calc(50% - 10px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.formGroup input[type='time'],
+.formGroup input[type='datetime-local'] {
+  width: calc(100% - 20px);
+}
+
+.btn {
+  background-color: #0070f3;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: block;
+}
+
+.btn:hover {
+  background-color: #005bb5;
+}

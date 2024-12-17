@@ -1,0 +1,13 @@
+VS Code のターミナルのところに以下の通り実行してください
+
+npm install --save-dev typescript @types/react @types/node
+
+MacBookを使ったら
+yarn add --dev typescript @types/react @types/node
+
+そのあと
+npm install
+
+npm run dev
+
+これで見れるようになりました

@@ -1,0 +1,219 @@
+.main {
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.header p {
+  font-size: 1.5rem;
+}
+
+.toggleButtons {
+  display: flex;
+}
+
+.toggleButtons button {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  background: #f0f0f0;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.toggleButtons button:hover {
+  background: #d8d8d8;
+}
+
+.toggleButtons .active {
+  background: var(--primary);
+  color: white;
+}
+
+.chartSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.chart {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+}
+
+.chartText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.balanceLabel {
+  font-size: 1rem;
+  color: gray;
+}
+
+.balance {
+  font-size: 2rem;
+  color: var(--primary);
+  margin: 1rem 0;
+}
+
+.arrowContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 200px;
+  margin-top: 1rem;
+}
+
+.arrowButton {
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s;
+}
+
+.arrowButton:hover {
+  transform: scale(1.1);
+}
+
+.details {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.details p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.detailValue {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.transactions {
+  width: 100%;
+  max-width: 600px;
+}
+
+.transactionSection {
+  margin-bottom: 2rem;
+}
+
+.transactionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f0f0f0;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.transactionHeader p {
+  margin: 0;
+}
+
+.transactionItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.categoryColor {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.amount {
+  font-weight: bold;
+}
+
+.income {
+  color: green;
+}
+
+.expense {
+  color: red;
+}
+
+.dropdownButton {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: #f0f0f0;
+  padding: 0.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.dropdownButton:hover {
+  background: #d8d8d8;
+}
+
+.dropdownContent {
+  display: none;
+  padding: 0.5rem;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+}
+
+.transactionSection .dropdownButton.active + .dropdownContent {
+  display: block;
+}
+
+.addExpenseButton {
+  position: fixed;
+  bottom: 7rem;
+  right: 1rem;
+}
+
+.showAllExpensesButton {
+  position: fixed;
+  bottom: 11rem;
+  right: 1rem;
+}
+
+.addExpenseButton button,
+.showAllExpensesButton button {
+  background: var(--primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.addExpenseButton button:hover {
+  background: #003366;
+  transform: scale(1.05);
+}
+
+.showAllExpensesButton button:hover {
+  background: #07baf6;
+  transform: scale(1.05);
+}

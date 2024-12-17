@@ -1,0 +1,129 @@
+/* styles/navigation.module.css */
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 'header' 'main' 'footer';
+  overflow: hidden;
+}
+
+.main {
+  grid-area: main;
+  overflow-y: auto;
+  padding: 6rem 0;
+}
+
+.header {
+  grid-area: header;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 1rem 1.6rem;
+  background-color: #f8f9fa;
+  z-index: 10;
+  /* Ensure the header is on top of other elements */
+}
+
+.profile {
+  text-align: left;
+}
+
+.profileImage {
+  border-radius: 50%;
+  border: 1px solid #b8b8b8;
+}
+
+.title {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.dropdown {
+  font-size: 2rem;
+  text-align: right;
+  cursor: pointer;
+  position: relative;
+  /* Ensure the dropdown menu is positioned relative to this element */
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 43px;
+  right: 14px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 1000;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  padding: 1.4rem 2rem;
+  color: #000;
+  border-bottom: #f0f0f0 1px solid;
+  text-decoration: none;
+  gap: 1rem;
+  transition: background-color 0.3s;
+}
+
+.dropdownItem:last-child {
+  border-bottom: none;
+}
+
+.dropdownItem:hover {
+  background-color: #cecece;
+}
+
+.footer {
+  grid-area: footer;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  border-top: 1px solid #cecece;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.navItem {
+  flex: 1;
+  text-align: center;
+}
+
+.navItem a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.button {
+  background: none;
+  outline: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  gap: 0.2rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button .icon {
+  font-size: 2rem;
+}
+
+.navItem.active .button,
+.navItem.active .button .icon,
+.navItem.active .button span {
+  color: var(--primary) !important;
+}

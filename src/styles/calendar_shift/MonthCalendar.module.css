@@ -1,0 +1,26 @@
+/* styles/verticalMonthCalendar.module.css */
+.verticalCalendarContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.day {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.date {
+    font-weight: bold;
+}
+
+.event {
+    margin: 5px 0;
+    padding: 5px;
+    border-left: 5px solid;
+}
+
+.event p {
+    margin: 0;
+}

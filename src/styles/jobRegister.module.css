@@ -1,0 +1,69 @@
+/* accRegister.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  height: 100vh;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 2rem 0;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.input,
+.select {
+  padding: 10px;
+  border-bottom: 1px solid #cccccc;
+  transition: 100ms ease-in-out;
+}
+
+.input:focus,
+.select:focus {
+  outline: none;
+  border-bottom: 1px solid #0070f3;
+}
+
+.ageGender {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.buttons {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.skipButton {
+  background: none;
+  color: #0070f3;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.submitButton {
+  padding: 5px 10px;
+  background-color: #0070f3;
+  color: #ffffff;
+  border-radius: 50px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  width: 100%;
+}
